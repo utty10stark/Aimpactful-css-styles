@@ -1,3 +1,7 @@
-p.text-center.text-xs {
-    display: none;
-}
+$(document).ready(function() {
+    $("#my-iframe").on("load", function () {
+        console.log("Iframe loaded."); // Check if this message appears in the console
+        $('head').append('<link rel="stylesheet" type="text/css" href="https://utty10stark.github.io/Aimpactful-css-styles/styles.css">');
+        console.log("CSS file appended."); // Check if this message appears in the console
+    });
+});
