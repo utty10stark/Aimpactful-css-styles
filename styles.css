@@ -1,7 +1,9 @@
-$(document).ready(function() {
-    $("#my-iframe").on("load", function () {
-        console.log("Iframe loaded."); // Check if this message appears in the console
-        $('head').append('<link rel="stylesheet" type="text/css" href="https://utty10stark.github.io/Aimpactful-css-styles/styles.css">');
-        console.log("CSS file appended."); // Check if this message appears in the console
-    });
-});
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Change this to match your page's background color */
+    z-index: 9999; /* Adjust the z-index as needed */
+}
